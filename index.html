@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="contacts">
+        <div class="container">
+            <input type="search" placeholder="Поиск" id="search">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" id="contactsAdd" class="contacts__add">+ Добавить контакт</button>
+                </div>
+            </div>
+
+            <div class="contactList">
+                <div class="row"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup__edit wrapper">
+        <form class="content">
+            <input type="hidden" name="id" value="">
+            <div class="content__bottom-close">
+                <button type="button" class="popup-close">✕</button>
+            </div>
+            <h3>Изменить контакт</h3>
+            <div class="content__name">
+                <p>Имя:</p>
+                <input type="text" name="name" id="editName" value="">
+            </div>
+            <div class="content__tel">
+                <p>Номер телефона:</p>
+                <input type="tel" name="phone" id="editTel" value="">
+            </div>
+            <button type="submit" id="editButtonSave" class="content_edit button">Сохранить</button>
+        </form>
+    </div>
+    <div class="popup__add wrapper">
+        <form class="content">
+            <input type="hidden" name="id" id="addID">
+            <div class="content__bottom-close">
+                <button type="button" class="popup-close">✕</button>
+            </div>
+            <h3>Добавить контакт</h3>
+            <div class="content__name">
+                <p>Имя:</p>
+                <input type="text" name="name" id="addName" placeholder="Иван Петрович">
+            </div>
+            <div class="content__tel">
+                <p>Номер телефона:</p>
+                <input type="tel" name="phone" id="addTel" placeholder="+7888888888">
+            </div>
+            <button type="submit" id="addButton" class="content_add button">Добавить</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./jquery.mask.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
